@@ -171,8 +171,8 @@
       "description": "Approved for Travel Entry",
       "required": [
         "tg",
-        "af",
-        "pa",
+        "dt",
+        "ap",
         "co",
         "is",
         "ci"
@@ -188,8 +188,8 @@
           "type": "string",
           "format": "date"
         },
-        "pa": {
-          "description": "\"Protocol(s) of Approval\": reference(s) to protocol(s) (e.g. vaccination courses/cycles) under which this approval was granted and issued",
+        "ap": {
+          "description": "\"Approval Protocol(s)\": reference(s) to protocol(s) (e.g. vaccination courses/cycles) under which this approval was granted and issued",
           "type": "array",
           "items": {
             "type": "string",
