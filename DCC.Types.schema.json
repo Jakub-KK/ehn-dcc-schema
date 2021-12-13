@@ -183,15 +183,19 @@
           "description": "disease or agent targeted",
           "$ref": "https://id.uvci.eu/DCC.ValueSets.schema.json#/$defs/disease-agent-targeted"
         },
-        "af": {
-          "description": "\"Approved From\": ISO 8601 complete date that holder is considered approved for travel",
+        "dt": {
+          "description": "ISO 8601 complete date that holder is considered adequately immunized, and approved for travel",
           "type": "string",
           "format": "date"
         },
         "pa": {
-          "description": "\"Protocol of Approval\": reference to protocol (e.g. vaccination course/cycle) under which approval was granted and issued",
-          "type": "string",
-          "maxLength": 80
+          "description": "\"Protocol(s) of Approval\": reference(s) to protocol(s) (e.g. vaccination courses/cycles) under which this approval was granted and issued",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "minItems": 1
         },
         "co": {
           "description": "Country of Approval",
